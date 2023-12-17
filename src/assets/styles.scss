@@ -1,0 +1,117 @@
+$primary_color: #3EA748;
+$white_color: #FFF;
+$grey_color: #F6F6F6;
+
+@font-face {
+  font-family: CeraProLight;
+  src: url('../assets/cera-pro-5.ttf');
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: CeraProLight;
+  font-size: 16px;
+  font-weight: 900;
+  width: 1440px;
+  height: 900px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#loginpage {
+  background: $primary_color;
+  width: 100%;
+  height: 900px;
+  z-index: 100;
+}
+
+#logingroup {
+  position: absolute;
+  z-index: 1000;
+  background: $white_color;
+  height: 900px;
+  max-width: 624px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 80px 95px 92px 179px;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+}
+
+.logo_image{
+  background: url('../assets/image\ 555.svg'), lightgray -16.372px -6.6px / 114.583% 122% no-repeat;
+  width: 117px;
+  height: 30px;
+}
+
+.login_header {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 250px;
+  height: 50px;
+  flex-grow: 1;
+  letter-spacing:1px;
+  font-weight:bold;
+  font-family: CeraProLight;
+  font-size: 40px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.input {
+  width: 350px;
+  height: 70px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: $grey_color;
+  letter-spacing: 0.2px;
+}
+
+.button {
+  width: 160px;
+  height: 50px;
+  margin-top: 30px;
+  padding: 16px 32px 16px 32px;
+  border: none;
+  border-radius: 10px;
+  color: $white_color;
+  background-color: $primary_color;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+#logingroup button:hover {
+  background-color: rgba($primary_color, 0.9);
+  cursor: pointer;
+}
+
+.login_footer {
+  flex-grow: 1;
+  align-self: flex-start;
+  
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.info {
+  width: 260px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.64px;
+  line-height: 24px;
+}
+
+.info a {
+  color: $primary_color;
+}
