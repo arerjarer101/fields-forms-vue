@@ -3,8 +3,8 @@ $white_color: #FFF;
 $grey_color: #F6F6F6;
 
 @font-face {
-  font-family: CeraProLight;
-  src: url('../assets/cera-pro-5.ttf');
+  font-family: CeraPro;
+  src: url('../assets/cera-pro-regular.otf') format("opentype");
 }
 
 * {
@@ -13,14 +13,30 @@ $grey_color: #F6F6F6;
 }
 
 :root {
-  font-family: CeraProLight;
+  font-family: CeraPro;
   font-size: 16px;
-  font-weight: 900;
+  font-weight: normal;
   width: 1440px;
   height: 900px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0 0 0 14px;
+}
+
+h1 {
+  flex-grow: 1;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+input {
+  padding-left: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: $grey_color;
+  letter-spacing: 0.2px;
 }
 
 #loginpage {
@@ -35,7 +51,7 @@ $grey_color: #F6F6F6;
   z-index: 1000;
   background: $white_color;
   height: 900px;
-  max-width: 624px;
+  max-width: 614px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 80px 95px 92px 179px;
@@ -50,58 +66,69 @@ $grey_color: #F6F6F6;
   height: 30px;
 }
 
-.login_header {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 250px;
-  height: 50px;
-  flex-grow: 1;
-  letter-spacing:1px;
-  font-weight:bold;
-  font-family: CeraProLight;
-  font-size: 40px;
-  font-style: normal;
-  line-height: normal;
+.login_body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
 }
 
-.input {
+.login_body > h1 {
+  width: 250px;
+  height: 50px;
+}
+
+.login_body input {
   width: 350px;
   height: 70px;
-  margin-bottom: 10px;
-  padding-left: 30px;
-  border: none;
-  border-radius: 10px;
-  background-color: $grey_color;
-  letter-spacing: 0.2px;
+}
+
+.inputgroup > input:not(:first-child) {
+  margin-top: 10px;
 }
 
 .button {
   width: 160px;
   height: 50px;
-  margin-top: 30px;
   padding: 16px 32px 16px 32px;
   border: none;
   border-radius: 10px;
   color: $white_color;
   background-color: $primary_color;
   font-weight: 500;
+}
+
+.button_outline {
+  border: 1px solid $primary_color;
+  color: $primary_color;
+  background-color: $white_color;
+  font-weight: 500;
   letter-spacing: 0.2px;
 }
 
-#logingroup button:hover {
+.button:hover {
   background-color: rgba($primary_color, 0.9);
+  cursor: pointer;
+}
+
+.button_outline:hover {
+  background-color: rgba($primary_color, 0.9);
+  color: $white_color;
   cursor: pointer;
 }
 
 .login_footer {
   flex-grow: 1;
   align-self: flex-start;
-  
+
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  flex-direction: column;
   gap: 8px;
+}
+
+.menuitem_active {
+  color: $primary_color;
 }
 
 .info {
@@ -110,8 +137,98 @@ $grey_color: #F6F6F6;
   font-style: normal;
   letter-spacing: -0.64px;
   line-height: 24px;
+  opacity: 0.5;
 }
 
 .info a {
   color: $primary_color;
 }
+
+#formpage {
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+}
+
+#formlist {
+  background: $grey_color;
+  width: 100%;
+  height: 900px;
+  padding: 80px 165px 30px 450px;
+  overflow: scroll;
+}
+
+#formmenu {
+  position: fixed;
+  z-index: 1000;
+  background: $white_color;
+  height: 100%;
+  max-height: 900px;
+  max-width: 420px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 80px 95px 92px 179px;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+}
+
+.sidemenu {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  gap: 16px;
+}
+
+.formlist_head {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.formlist_head button {
+  width: 165px;
+  height: 51px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.formlist_main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form {
+  width: 825px;
+  height: 190px;
+  background-color: $white_color;
+  border-radius: 10px;
+  padding: 24px;
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 100px 42px; 
+}
+
+.form_button {
+  width: 179px;
+  height: 42px;
+  line-height: 10px;
+  justify-self: right;
+}
+
+.form > button {
+  border: none;
+}
+
+.form h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.form .info {
+  padding-top: 20px;
+}
+

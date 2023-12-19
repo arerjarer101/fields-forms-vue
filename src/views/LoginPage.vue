@@ -24,37 +24,37 @@ img {
 .img407 {
   position: fixed;
   top: 44px;
-  left: 670px;
+  left: 684px;
 }
 
 .img408 {
   position: fixed;
   top: 92px;
-  left: 1180px;
+  left: 1194px;
 }
 
 .img410 {
   position: fixed;
   top: 203px;
-  left: 688px;
+  left: 702px;
 }
 
 .img406 {
   position: fixed;
   top: 600px;
-  left: 430px;
+  left: 444px;
   
 }
 
 .img409 {
   position: fixed;
   top: 706px;
-  left: 1122px;
+  left: 1136px;
 }
 
 .img411 {
   position: fixed;
   top: 587px;
-  left: 1238px;
+  left: 1252px;
 }
 </style>

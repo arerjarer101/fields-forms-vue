@@ -1,6 +1,4 @@
 <script setup>
-
-
 </script>
 
 <template>
@@ -9,9 +7,13 @@
     <div class="login_body">
       <div class="logo_image"></div>
       <h1 class="login_header">Авторизация</h1>
-      <input class="input" type="text" placeholder="Логин">
-      <input class="input" type="text" placeholder="Пароль">
-      <button class="button">Вход</button>
+      <div class="inputgroup">
+        <input class="input" type="text" placeholder="Логин">
+        <input class="input" type="text" placeholder="Пароль">
+      </div>
+      <router-link :to="'/forms'">
+        <button  class="button">Вход</button>
+      </router-link>
     </div>
     <div class="login_footer">
       <span class="info">Если возникла проблема, то можете написать <a href="">Алёне из Сибтеха</a></span>
