@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import LoginPage from '../views/LoginPage.vue'
 import FormPage from '../views/FormPage.vue'
+import FieldPage from '../views/FieldPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,7 +16,7 @@ const router = createRouter({
     },
     {
       path: '/fields',
-      component: FormPage
+      component: FieldPage
     },
   ]
 })

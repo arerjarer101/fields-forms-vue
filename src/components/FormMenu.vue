@@ -9,9 +9,9 @@
       <span class="menuitem_active">Формы</span>
       <span class="">Пользователи</span>
     </div>
-    <div class="login_footer">
+    <div class="sidemenu_footer">
       <router-link :to="'/'">
-        <button  class="button button_outline form_button">Выход</button>
+        <button  class="button button_outline">Выход</button>
       </router-link>
     </div>
   </div>

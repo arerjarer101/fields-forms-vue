@@ -1,13 +1,15 @@
 <script setup>
 import FieldMenu from '../components/FieldMenu.vue';
-import FormList from '../components/FormList.vue';
+import FieldEdit from '../components/FieldEdit.vue';
+import FieldPreview from '../components/FieldPreview.vue';
 
 </script>
 
 <template>
-  <div id="formpage">
+  <div id="addfield">
     <FieldMenu></FieldMenu>
-    <FormList></FormList>
+    <FieldEdit></FieldEdit>
+    <FieldPreview></FieldPreview>
   </div>
 </template>
 

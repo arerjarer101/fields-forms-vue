@@ -15,9 +15,9 @@
         <button  class="button">Вход</button>
       </router-link>
     </div>
-    <div class="login_footer">
-      <span class="info">Если возникла проблема, то можете написать <a href="">Алёне из Сибтеха</a></span>
-      <span class="info">С любовью, ваш <a href="">Сибтех</a></span>
+    <div class="sidemenu_footer">
+      <span class="sidemenu_footer_info">Если возникла проблема, то можете написать <a href="">Алёне из Сибтеха</a></span>
+      <span class="sidemenu_footer_info">С любовью, ваш <a href="">Сибтех</a></span>
     </div>
 
   </div>

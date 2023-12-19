@@ -6,6 +6,10 @@ function createForm() {
   formStore.addForm({name: 'new form'})
 }
 
+function editForm(formId) {
+  formStore.editForm(formId)
+}
+
 </script>
 
 <template>
@@ -21,13 +25,13 @@ function createForm() {
           <span class="info author">Автор: user1</span>
         </div>
         <div style="text-align: right;">
-          <router-link :to="'/fields'">
+          <router-link :to="'/fields'" @click="editForm(form.id)">
             <button class="button button_outline form_button">Редактировать</button>
           </router-link>
         </div>
         
         <span class="info">Дата создания {{ form.creationDate }}</span>
-        <button @click=" formStore.deleteForm(form.id)" class="button button_outline form_button">Удалить</button>
+        <button @click="formStore.deleteForm(form.id)" class="button button_outline form_button">Удалить</button>
       </div>
     </div>
     
