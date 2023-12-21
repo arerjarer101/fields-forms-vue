@@ -7,7 +7,7 @@ $black_color_2: #212121;
 
 @font-face {
   font-family: CeraPro;
-  src: url('../assets/cera-pro-regular.otf') format("opentype");
+  src: url('@/assets/cera-pro-regular.otf') format("opentype");
 }
 
 * {
@@ -68,20 +68,20 @@ input {
 }
 
 .logo_image{
-  background: url('../assets/image\ 555.svg'), lightgray -16.372px -6.6px / 114.583% 122% no-repeat;
+  background: url('@/assets/image\ 555.svg'), lightgray -16.372px -6.6px / 114.583% 122% no-repeat;
   width: 117px;
   height: 30px;
 }
 
 .icon_plus{
-  background: url('../assets/plus.svg') no-repeat;
+  background: url('@/assets/plus.svg') no-repeat;
   background-size: 30px 30px;
   width: 30px;
   height: 30px;
 }
 
 .icon_arrow_left{
-  background: url('../assets/arrow-left.svg') no-repeat;
+  background: url('@/assets/arrow-left.svg') no-repeat;
   background-size: 10px 10px;
   width: 10px;
   height: 10px;

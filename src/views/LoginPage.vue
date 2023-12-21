@@ -9,12 +9,12 @@ import LoginGroup from '../components/LoginGroup.vue';
   <div id="loginpage">
     <LoginGroup></LoginGroup>
   </div>
-  <img class="img407" src="../assets/image 407.png" alt="green cube img">
-  <img class="img408" src="../assets/image 408.png" alt="green cube img">
-  <img class="img410" src="../assets/image 410.png" alt="green cube img">
-  <img class="img406" src="../assets/image 406.png" alt="green cube img">
-  <img class="img409" src="../assets/image 409.png" alt="green cube img">
-  <img class="img411" src="../assets/image 411.png" alt="green cube img">
+  <img class="img407" src="@/assets/image 407.png" alt="green cube img">
+  <img class="img408" src="@/assets/image 408.png" alt="green cube img">
+  <img class="img410" src="@/assets/image 410.png" alt="green cube img">
+  <img class="img406" src="@/assets/image 406.png" alt="green cube img">
+  <img class="img409" src="@/assets/image 409.png" alt="green cube img">
+  <img class="img411" src="@/assets/image 411.png" alt="green cube img">
 </template>
 
 <style scoped>

@@ -2,10 +2,6 @@
 import {  useFormStore  } from '../stores/formStore'
 const formStore = useFormStore()
 
-function createForm() {
-  formStore.addForm({name: 'new form'})
-}
-
 </script>
 
 <template>

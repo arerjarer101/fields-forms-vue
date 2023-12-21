@@ -3,7 +3,7 @@ import {  useFormStore  } from '../stores/formStore'
 const formStore = useFormStore()
 
 function createForm() {
-  formStore.addForm({name: 'new form'})
+  formStore.addForm({})
 }
 
 function editForm(formId) {
